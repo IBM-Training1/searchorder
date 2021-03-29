@@ -24,8 +24,8 @@ public class OrderSearchController {
 		return orderService.getOrders();
 	}
 	@GetMapping("/order/{id}")
-	Optional<Order> getOrder(@PathVariable ("id") String orderId) {
-		return orderService.getOrder(orderId);
+	Optional<Order> getOrderById(@PathVariable ("id") String orderId) {
+		return orderService.getOrderById(orderId);
 	}
 
 }

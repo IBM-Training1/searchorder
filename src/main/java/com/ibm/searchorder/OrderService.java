@@ -14,7 +14,7 @@ public class OrderService { // spring bean
 	public List<Order> getOrders() {
 		return orderRepository.findAll();
 	}
-	public Optional<Order> getOrder(String orderId) {
+	public Optional<Order> getOrderById(String orderId) {
 		return orderRepository.findById(orderId);
 
 	}
